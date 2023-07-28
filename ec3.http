@@ -24,25 +24,25 @@
 # Al finalizar el examen entregarlo en el siguiente link: https://forms.office.com/r/4E2zr3Kpww
 
 @server = localhost:8080
-@api = {{server}}/api/ec3
+@api = https://alcantaranavarro.onrender.com/api/ec3
 
 ################ Categorias: ################
 ###
-GET {{api}}/categorias
+GET https://alcantaranavarro.onrender.com/categorias
 ###
-POST {{api}}/categorias
+POST https://alcantaranavarro.onrender.com/categorias
 Content-Type: application/json
 
 {"nombre": "Instrumentos de Cuerda"}
 ################ Instrumentos: ################
 ###
-GET {{api}}/instrumentos
+GET https://alcantaranavarro.onrender.com/instrumentos
 ###
-POST {{api}}/instrumentos
+POST https://alcantaranavarro.onrender.com/instrumentos
 Content-Type: application/json
 
 {"nombre": "Guitarra", "categoria": "http://localhost/api/ec3/categorias/1"}
 ###
-GET {{api}}/instrumentos/1/categoria
+GET https://alcantaranavarro.onrender.com/instrumentos/1/categoria
 ###
-GET {{api}}/instrumentos?sort=nombre,desc
+GET https://alcantaranavarro.onrender.com/instrumentos?sort=nombre,desc
